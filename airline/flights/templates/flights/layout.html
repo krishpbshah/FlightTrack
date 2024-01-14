@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flights</title>
+        <style>
+          :root {
+  --primary-color: hsl(207, 80%, 50%);
+  --secondary-color: hsl(340, 85%, 65%);
+  --accent-color: hsl(15, 85%, 65%);
+  --background-color: hsl(210, 10%, 96%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: var(--primary-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo {
+  height: 40px;
+}
+
+.dcc-author {
+  background-color: var(--secondary-color);
+}
+
+.dcc-author__links a {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  margin-right: 4px;
+}
+
+.dcc-author span {
+  font-weight: 500;
+}
+
+.dcc-author__links a:hover {
+  border-bottom: 1px solid #1a73e8;
+}
+
+.dcc-author__links a:last-of-type {
+  margin-right: 0;
+}
+
+.main-content {
+  background-color: var(--background-color);
+  padding: 2em;
+}
+
+.main-heading {
+  color: var(--primary-color);
+}
+        </style>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
